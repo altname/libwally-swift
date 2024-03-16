@@ -99,6 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC4B1102BA663DC0050A0E1 /* LibWally */ = {
+			isa = PBXGroup;
+			children = (
+				A20557A522C6CDBE007221AA /* LibWally.modulemap */,
+				FE9CD3B4229C397900345DFA /* LibWally.h */,
+				FE9CD3B5229C397900345DFA /* Info.plist */,
+				FE39CDF9229DAAF400DD135E /* DataExtension.swift */,
+				FE1A3C0522B395B300EDCB58 /* Address.swift */,
+				FEC79CE3229E7F3800D86E2E /* BIP32.swift */,
+				FE120F54229C3B6900E7720C /* BIP39.swift */,
+				A21016BC279EE9D00002330E /* Descriptor.swift */,
+				A2BCE19323A7D6B200737BEB /* PSBT.swift */,
+				FE8B80A322B3E5630041CC94 /* Script.swift */,
+				A232260022B94A6B00C3B79C /* Transaction.swift */,
+			);
+			path = LibWally;
+			sourceTree = "<group>";
+		};
 		75665EFE28112D0C00231C5D /* LibWallyCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,17 +150,7 @@
 		FE9CD3B3229C397900345DFA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A20557A522C6CDBE007221AA /* LibWally.modulemap */,
-				FE9CD3B4229C397900345DFA /* LibWally.h */,
-				FE9CD3B5229C397900345DFA /* Info.plist */,
-				FE39CDF9229DAAF400DD135E /* DataExtension.swift */,
-				FE1A3C0522B395B300EDCB58 /* Address.swift */,
-				FEC79CE3229E7F3800D86E2E /* BIP32.swift */,
-				FE120F54229C3B6900E7720C /* BIP39.swift */,
-				A21016BC279EE9D00002330E /* Descriptor.swift */,
-				A2BCE19323A7D6B200737BEB /* PSBT.swift */,
-				FE8B80A322B3E5630041CC94 /* Script.swift */,
-				A232260022B94A6B00C3B79C /* Transaction.swift */,
+				3AC4B1102BA663DC0050A0E1 /* LibWally */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -519,7 +527,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/LibWally/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,7 +540,7 @@
 					"$(PROJECT_DIR)/CLibWally/libwally-core/build",
 				);
 				MARKETING_VERSION = 0.0.6;
-				MODULEMAP_FILE = "$(SRCROOT)/Sources/LibWally.modulemap";
+				MODULEMAP_FILE = "$(SRCROOT)/Sources/LibWally/LibWally.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_SWIFT_FLAGS = "-Xfrontend -no-serialize-debugging-options";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.sprovoost.LibWally;
@@ -561,7 +569,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/LibWally/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -574,7 +582,7 @@
 					"$(PROJECT_DIR)/CLibWally/libwally-core/build",
 				);
 				MARKETING_VERSION = 0.0.6;
-				MODULEMAP_FILE = "$(SRCROOT)/Sources/LibWally.modulemap";
+				MODULEMAP_FILE = "$(SRCROOT)/Sources/LibWally/LibWally.modulemap";
 				OTHER_SWIFT_FLAGS = "-Xfrontend -no-serialize-debugging-options";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.sprovoost.LibWally;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
