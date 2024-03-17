@@ -13,6 +13,6 @@ let package = Package(
     targets: [
         .target(
             name: "LibWally",
-            dependencies: []),
+            dependencies: ["CLibWally"]),
     ]
 )
